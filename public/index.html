@@ -15,29 +15,81 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<link href="%PUBLIC_URL%/css/bootstrap.css" rel="stylesheet">
+  
+  <link type="text/css" href="%PUBLIC_URL%/css/custom.css" rel="stylesheet"  id="theme-stylesheet" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="%PUBLIC_URL%/fonts/stylesheet.css"/>
+  <link rel="stylesheet" href="%PUBLIC_URL%/owl.carousel/assets/owl.carousel.css"/>
+  <link rel="stylesheet" href="%PUBLIC_URL%/ticker/css/cgg_ticker.css"/>
+  <link rel="stylesheet" href="%PUBLIC_URL%/owl.carousel/assets/owl.theme.default.css"/>
+  <link href="%PUBLIC_URL%/menu/sm-core-css.css" rel="stylesheet"/>
+  <link href="%PUBLIC_URL%/menu/sm-blue.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet"/>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  <script type="text/javascript">
+    function swapStyleSheet(sheet){
+ 
+      document.getElementById('theme-stylesheet').setAttribute('href', sheet);
+
+    } 
+  </script> 
+  <style type="text/css">
+
+    .translated-ltr {
+      margin-top:-40px;
+    }
+    #printable {
+      display: none;
+    }
+
+    @media print {
+      body {
+
+        visibility: hidden;
+      }
+
+      #non-printable {
+        display: none;
+      }
+
+      #printable {
+        display: block;
+      }
+
+    }
+
+
+    
+    .goog-te-banner-frame {
+
+height:0px !important;
+}
+  </style>
+
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="%PUBLIC_URL%/js/fontsizer.js"></script>
+ 
+  <script src="%PUBLIC_URL%/js/popper.min.js"></script>
+  <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/js/translate.js"></script>
+<script src="%PUBLIC_URL%/owl.carousel/owl.carousel.js"></script>
+<script src="%PUBLIC_URL%/ticker/js/cgg_ticker.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+
+
+
+  <script type="text/javascript" src="%PUBLIC_URL%/js/jquery.smartmenus.js"> </script>
+
+
+  <script type="text/javascript" src="%PUBLIC_URL%/menu/sm-menu.js"> </script>
+
   </body>
 </html>
